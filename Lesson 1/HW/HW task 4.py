@@ -17,8 +17,11 @@
 # 1+1*2
 
 SumAll = int(input('Введите сколько детям придется делать журавликов: '))
-Katya = (SumAll // 3) * 2
-Petya = (SumAll-Katya)//2
-Seroga = Petya
+if SumAll % 6:
+    print('Некорректно')
+else:
+    Katya = (SumAll // 3) * 2
+    Petya = (SumAll-Katya)//2
+    Seroga = Petya
 print('Катя сделала =', Katya, ',', 'Петя сделал =',
-    Petya,',', 'Сережа сделал =', Seroga, '.')
+      Petya, ',', 'Сережа сделал =', Seroga, '.')
