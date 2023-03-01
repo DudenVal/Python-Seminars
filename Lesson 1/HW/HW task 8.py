@@ -11,7 +11,7 @@ n = int(input('Высота шоколадки: '))
 m = int(input('Ширина шоколадки: '))
 k = int(input('Количество долек шоколадки, которые хотите зверски отломить: '))
 
-if(k < n * m and k <= 1):
+if(k < n * m and k <= 1) and n*m != k:
     print('No')
 else:
     print('Yes')
