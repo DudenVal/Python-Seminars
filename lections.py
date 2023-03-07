@@ -92,3 +92,11 @@ def merge_sort(nums):
 list_1 = [1,2,2,4,5,51,2,431,25,1,65,1]
 merge_sort(list_1)
 print(list_1)
+
+# -------------------подсчет времени---------------
+
+from time import time
+from random import choices
+nums = choices(range(3000), k=2000) #рандомизатор
+start = time()
+print(time() - start)
