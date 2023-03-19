@@ -22,7 +22,6 @@ if not path.exists(file_base):
 
 
 def read_records():
-    """"""
 
     global all_data, last_id
 
@@ -114,9 +113,6 @@ def search_contact():
 
 
 def exist_contact(rec_id, data):
-
-    # : type data:
-    # : type rec_id:   id
 
     if rec_id:
         candidates = [i for i in all_data if rec_id in i.split()[0]]
